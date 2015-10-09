@@ -3,6 +3,8 @@
 dalek-status
 ==========
 
+![initial](initial.png)
+
 Overview
 --------
 
