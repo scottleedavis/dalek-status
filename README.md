@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/scottleedavis/dalek-status.svg)](https://travis-ci.org/scottleedavis/dalek-status)
-
 dalek-status
 ==========
 
