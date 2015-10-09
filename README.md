@@ -31,6 +31,6 @@ Running
 Todo
 -----
 
-* link in digital pour
-* add in gpio calls for raspi
+* link in [brewerydb-node](https://github.com/ronandi/brewerydb-node)
+* add in flow sensor code base
 
