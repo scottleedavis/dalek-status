@@ -29,9 +29,9 @@ source.addEventListener('message', function(e) {
   console.log(data);
   var data = google.visualization.arrayToDataTable([
      ['Keg', 'Mills'],
-     ['Keg 1',  raw_data['keg_1'].flow],
-     ['Keg 2',  raw_data['keg_2'].flow],
-     ['Keg 2',  raw_data['keg_3'].flow]
+     ['Keg 1',  raw_data[0].millis],
+     ['Keg 2',  raw_data[1].millis],
+     ['Keg 2',  raw_data[2].millis]
   ]);
   chart.draw(data, options);
 

@@ -18,6 +18,9 @@
     "ws": "latest",
     "node-cache": "latest"
   },
+  "devDependencies": {
+    "onoff": "0.3.x"
+  },
   "license": "MIT",
   "repository": "https://github.com/scottleedavis/dalek-status"
 }
