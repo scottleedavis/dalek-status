@@ -31,8 +31,9 @@ Usage
 
 Multimode
 ---------
-embedded mode - on board a raspberry pi, collecting flow information from three kegs.
-streams viz mode - portfolio client app that displays live streams feed from the embedded device.
+
+* embedded mode - on board a raspberry pi, collecting flow information from three kegs.
+* streams viz mode - portfolio client app that displays live streams feed from the embedded device.
 
 Viewing Stream titles
 ---------------------
