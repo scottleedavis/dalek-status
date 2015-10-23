@@ -7,31 +7,25 @@ dalek-status
 Overview
 --------
 
-An embedded flow state tracking server that streams information to Webtrends Streams™
+An embedded flow state tracking server that streams information to [Webtrends Streams™](http://www.webtrends.com/products/streams/)
 
 
 Requirements
 ------------
 
-nodejs >= 0.10
+[nodejs](https://nodejs.org/) >= 0.10
 
 
-Install
--------
+Installation
+-------------
 
 ```
 npm install
 ```
 
-Running
--------
+Usage
+-----
 ```
 ./run.sh
 ```
-
-Todo
------
-
-* [brewerydb-node](https://github.com/ronandi/brewerydb-node)
-* sapi client app connection
 
