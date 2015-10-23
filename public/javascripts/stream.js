@@ -20,6 +20,7 @@ source.addEventListener('message', function(e) {
   var data = JSON.parse(e.data);
   console.log(data);
 
+  options.width = $("#c1").width().toString();
   var d1 = google.visualization.arrayToDataTable([
      ['Keg', 'Mills'],
      [data[0].color,  normalize(keg_size - data[0].millis)]

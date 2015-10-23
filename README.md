@@ -2,11 +2,12 @@ dalek-status
 ==========
 
 ![initial](initial.png)
+![initial](black_box.png)
 
 Overview
 --------
 
-An application than provides a visualization of the current sensory information as recieved from the Webtrends Dalek.
+An embedded flow state tracking server that streams information to Webtrends Streams™
 
 
 Requirements
