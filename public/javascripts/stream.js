@@ -9,13 +9,9 @@ var options = {
   max: keg_size
 };
 
-
-
 function normalize(val){
-  // return parseInt((val / keg_size ) * 100);
   return parseInt(val);
 }
-
 
 google.load("visualization", "1", {packages:["gauge"]});
 var source = new EventSource('/stream');
