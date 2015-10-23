@@ -13,6 +13,20 @@ function normalize(val){
   return parseInt(val)/1000;
 }
 
+function urldecode(str) {
+   return decodeURIComponent((str+'').replace(/\+/g, '%20'));
+}
+
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return results[1] || 0;
+    }
+}
+
 google.load("visualization", "1", {packages:["gauge"]});
 var source = new EventSource('/stream');
 source.addEventListener('message', function(e) {
@@ -21,24 +35,26 @@ source.addEventListener('message', function(e) {
   console.log(data);
 
   options.width = $("#c1").width().toString();
+  var title1 = $.urlParam("orange") ? urldecode($.urlParam("orange")) : data[0].color;
   var d1 = google.visualization.arrayToDataTable([
      ['Keg', 'Mills'],
-     [data[0].color,  normalize(keg_size - data[0].millis)]
+     [title1,  normalize(keg_size - data[0].millis)]
   ]);
   var chart1 = new google.visualization.Gauge(document.getElementById('orange_div'));
   chart1.draw(d1, options);
 
+  var title2 = $.urlParam("green") ? urldecode($.urlParam("green")) : data[1].color;
   var d2 = google.visualization.arrayToDataTable([
      ['Keg', 'Mills'],
-     [data[1].color,  normalize(keg_size - data[1].millis)]
+     [title2,  normalize(keg_size - data[1].millis)]
   ]);
   var chart2 = new google.visualization.Gauge(document.getElementById('green_div'));
   chart2.draw(d2, options);
 
-
+  var title3 = $.urlParam("yellow") ? urldecode($.urlParam("yellow")) : data[2].color;
   var d3 = google.visualization.arrayToDataTable([
      ['Keg', 'Mills'],
-     [data[2].color,  normalize(keg_size - data[2].millis)]
+     [title3,  normalize(keg_size - data[2].millis)]
   ]);
   var chart3 = new google.visualization.Gauge(document.getElementById('yellow_div'));
   chart3.draw(d3, options);

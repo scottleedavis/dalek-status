@@ -13,7 +13,7 @@ An embedded flow state tracking server that streams information to [Webtrends St
 Requirements
 ------------
 
-[nodejs](https://nodejs.org/) >= 0.10
+[nodejs](https://nodejs.org/) >= v0.10.x
 
 
 Installation
@@ -28,4 +28,12 @@ Usage
 ```
 ./run.sh
 ```
+
+Setting Stream titles
+---------------------
+passing http parameters to titles (orange, green, yellow) 
+```
+http://localhost:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA
+```
+
 
