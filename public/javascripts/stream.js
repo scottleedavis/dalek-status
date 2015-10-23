@@ -3,14 +3,14 @@ var keg_size = 19500;  //milliters in a sixth barrel keg
 
 var options = {
   width: "400", height: "50%",
-  redFrom: 0, redTo: keg_size * 0.10,
-  yellowFrom: keg_size * 0.10, yellowTo: keg_size * 0.30,
+  redFrom: 0, redTo: keg_size/1000 * 0.10,
+  yellowFrom: keg_size/1000 * 0.10, yellowTo: keg_size/1000 * 0.30,
   minorTicks: 5,
-  max: keg_size
+  max: keg_size/1000
 };
 
 function normalize(val){
-  return parseInt(val);
+  return parseInt(val)/1000;
 }
 
 google.load("visualization", "1", {packages:["gauge"]});
