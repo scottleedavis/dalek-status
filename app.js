@@ -1,5 +1,5 @@
-var express = require('express');
-var path = require('path'),
+var express = require('express'),
+    path = require('path'),
     favicon = require('serve-favicon'),
     logger = require('morgan'),
     cookieParser = require('cookie-parser'),
@@ -11,18 +11,14 @@ var shared_cache = require('./lib/cache'),
     dalek_state = require('./routes/state'),
     update_stream = require('./routes/update-stream');
 
-if( process.env.LOCAL_ONLY ) {
-    local_stream.setCache(shared_cache);
-} else {
-    sapi.use(shared_cache);
-}
 
+local_stream.setCache(shared_cache);
 routes.setCache(shared_cache);
 dalek_state.setCache(shared_cache);
 update_stream.setCache(shared_cache);
 
-
-local_stream.setStream(update_stream, process.env.LOCAL_ONLY);
+var is_local = process.env.LOCAL_ONLY ? process.env.LOCAL_ONLY : false;
+local_stream.setStream(update_stream, is_local);
 local_stream.run();
 
 

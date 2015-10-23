@@ -1,9 +1,6 @@
-var cache;
-var out = [];
-var ctr=0;
-
-var dcapi = require('../lib/wt_dcapi');
-
+var cache,
+    out = [],
+    ctr=0;
 
 function stream(req, res) {
 

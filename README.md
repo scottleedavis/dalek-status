@@ -31,6 +31,6 @@ Running
 Todo
 -----
 
-* link in [brewerydb-node](https://github.com/ronandi/brewerydb-node)
+* [brewerydb-node](https://github.com/ronandi/brewerydb-node)
 * sapi client app connection
 
