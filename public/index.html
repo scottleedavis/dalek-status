@@ -1,19 +1,23 @@
 <html>
 <head>
-	<title>Dalek Feed Collector</title>
+	<title>Dalek Status</title>
 	<link rel="stylesheet" href="/stylesheets/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 </head>
 <body>
-	<!-- <img id="floorplan" src="/images/floorplan.png"> -->
-	<div id="location"></div>
-	<div id="keginfo">
-		<ul id="kegs"></ul>
+	<div id="wrapper">
+       <div id="c1" name="orange" style="background:orange">
+       		<div id="orange_div"></div>
+       </div><!--
+    --><div id="c2" name="green" style="background:green">
+    		<div id="green_div"></div>
+       </div><!--
+    --><div id="c3" name="yellow" style="background:yellow">
+    		<div id="yellow_div"></div>
+        </div>
 	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script src="http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js"></script>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="/javascripts/stream.js"></script>
 
-<div id="chart_div" style="width: 900px; height: 500px;"></div>
 </body>
 </html>

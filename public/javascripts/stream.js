@@ -1,42 +1,39 @@
-
-google.load("visualization", "1", {packages:["corechart"]});
-google.setOnLoadCallback(drawVisualization);
-
-function drawVisualization() {
-
-	var data = google.visualization.arrayToDataTable([
-     ['Keg', 'Mills'],
-     ['Keg 1',  0],
-     ['Keg 2',  0],
-     ['Keg 2',  0]
-  ]);
-
 var options = {
-  title : 'Dalek Pour stats',
-  vAxis: {title: 'Milliters Poured'},
-  hAxis: {title: 'Keg'},
-  seriesType: 'bars'
+  width: "400", height: "50%",
+  redFrom: 0, redTo: 10,
+  yellowFrom:10, yellowTo: 30,
+  minorTicks: 5
 };
 
-var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
-//chart.draw(data, options);
-
+google.load("visualization", "1", {packages:["gauge"]});
 
 var source = new EventSource('/stream');
 source.addEventListener('message', function(e) {
   
-  var raw_data = JSON.parse(e.data);
+  var data = JSON.parse(e.data);
   console.log(data);
-  var data = google.visualization.arrayToDataTable([
+
+  var d1 = google.visualization.arrayToDataTable([
      ['Keg', 'Mills'],
-     ['Keg 1',  raw_data[0].millis],
-     ['Keg 2',  raw_data[1].millis],
-     ['Keg 2',  raw_data[2].millis]
+     [data[0].color,  data[0].millis]
   ]);
-  chart.draw(data, options);
+  var chart1 = new google.visualization.Gauge(document.getElementById('orange_div'));
+  chart1.draw(d1, options);
+
+  var d2 = google.visualization.arrayToDataTable([
+     ['Keg', 'Mills'],
+     [data[1].color,  data[1].millis]
+  ]);
+  var chart2 = new google.visualization.Gauge(document.getElementById('green_div'));
+  chart2.draw(d2, options);
+
+
+  var d3 = google.visualization.arrayToDataTable([
+     ['Keg', 'Mills'],
+     [data[2].color,  data[2].millis]
+  ]);
+  var chart3 = new google.visualization.Gauge(document.getElementById('yellow_div'));
+  chart3.draw(d3, options);
 
  }, false);
-
-
-		  }
 
