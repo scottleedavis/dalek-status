@@ -7,7 +7,8 @@ dalek-status
 Overview
 --------
 
-An embedded flow state tracking server that streams information to [Webtrends Streams™](http://www.webtrends.com/products/streams/)
+An embedded flow state tracking system that leverages [Webtrends Streams™](http://www.webtrends.com/products/streams/).
+
 
 
 Requirements
@@ -32,8 +33,8 @@ Usage
 Multimode
 ---------
 
-* embedded mode - on board a raspberry pi, collecting flow information from three kegs.
-* streams viz mode - portfolio client app that displays live streams feed from the embedded device.
+* embedded mode - running on a raspberry pi, collecting flow sensor data.
+* streams viz mode - portfolio streams client application as source ( embedded --sapi-->  viz )
 
 Viewing Stream titles
 ---------------------
