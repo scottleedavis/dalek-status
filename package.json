@@ -16,7 +16,8 @@
     "crypto": "latest",
     "restler": "latest",
     "ws": "latest",
-    "node-cache": "latest"
+    "node-cache": "latest",
+    "lodash": "latest"
   },
   "devDependencies": {
     "onoff": "0.3.x"

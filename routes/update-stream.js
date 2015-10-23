@@ -2,6 +2,9 @@ var cache;
 var out = [];
 var ctr=0;
 
+var dcapi = require('../lib/wt_dcapi');
+
+
 function stream(req, res) {
 
   // req.socket.setTimeout(Infinity);

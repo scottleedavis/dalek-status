@@ -1,16 +1,15 @@
 var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var path = require('path'),
+    favicon = require('serve-favicon'),
+    logger = require('morgan'),
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser');
 
-var shared_cache = require('./lib/cache');
-var sapi = require('./lib/sapi');
-var local_stream = require('./lib/local_stream');
-var routes = require('./routes/index');
-var dalek_state = require('./routes/state');
-var update_stream = require('./routes/update-stream');
+var shared_cache = require('./lib/cache'),
+    local_stream = require('./lib/local_stream'),
+    routes = require('./routes/index'),
+    dalek_state = require('./routes/state'),
+    update_stream = require('./routes/update-stream');
 
 if( process.env.LOCAL_ONLY ) {
     local_stream.setCache(shared_cache);
@@ -23,13 +22,9 @@ dalek_state.setCache(shared_cache);
 update_stream.setCache(shared_cache);
 
 
-if( process.env.LOCAL_ONLY ) {
-    local_stream.setStream(update_stream);
-    local_stream.run();
-} else {
-    sapi.setStream(update_stream);
-    sapi.init();
-}
+local_stream.setStream(update_stream, process.env.LOCAL_ONLY);
+local_stream.run();
+
 
 //express boilerplate
 //--------------------------------------------------------//

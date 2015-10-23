@@ -32,5 +32,5 @@ Todo
 -----
 
 * link in [brewerydb-node](https://github.com/ronandi/brewerydb-node)
-* add in flow sensor code base
+* sapi client app connection
 
