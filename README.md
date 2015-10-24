@@ -30,13 +30,13 @@ Client/Server Usage
 
 **running in embedded mode** ([example](run.sh))
 
-Collect from local sensors, stream to sapi, and display dalek status at http://<servername>:3000/
+Collect from local sensors, stream to sapi, and display dalek status at [http://localhost:3000/](http://localhost:3000/)
 
 **running in streams client app mode** ([example](run_app_example.sh))
 
-Collect stream from [SAPI](http://sapi.webtrends.com/) and display dalek status at http://<servername>:3001/
+Collect stream from [SAPI](http://sapi.webtrends.com/) and display dalek status at [http://localhost:3001/](http://localhost:3001/)
 
-*Note: you will need to provide account id, oauth client id/secret*
+*You will need to provide your own accountId, oauth clientId & secret.*
 
 
 Setting Stream titles
