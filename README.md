@@ -41,7 +41,15 @@ Collect stream from [SAPI](http://sapi.webtrends.com/) and display dalek status 
 
 Setting Stream titles
 ---------------------
-passing http parameters to titles (orange, green, yellow) 
-[http://localhost:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA](http://localhost:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA)
+
+Each stream is marked a color associated with the flow sensor that it is represents.
+
+Currently:orange, green, yellow
+
+[?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA](http://localhost:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA)
+
+```
+http://<servername>:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA
+```
 
 
