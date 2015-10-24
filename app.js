@@ -18,8 +18,16 @@ dalek_state.setCache(shared_cache);
 update_stream.setCache(shared_cache);
 
 var is_local = process.env.LOCAL_ONLY ? process.env.LOCAL_ONLY : false;
-local_stream.setStream(update_stream, is_local);
-local_stream.run();
+var is_app = process.env.CLIENT_APP ? process.env.CLIENT_APP  : false;
+if( is_app ){ //sapi source
+    var sapi_stream = require('./lib/sapi');
+    sapi_stream.use(shared_cache);
+    sapi_stream.setStream(update_stream);
+    sapi_stream.init();
+} else { //embedded source
+    local_stream.setStream(update_stream, is_local);
+    local_stream.run();    
+}
 
 
 //express boilerplate
