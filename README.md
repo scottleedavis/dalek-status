@@ -30,23 +30,21 @@ Client/Server Usage
 
 **running in embedded mode** ([example](run.sh))
 
-Collect from local sensors, stream to sapi, and display dalek status at [http://localhost:3000/](http://localhost:3000/)
+* Collect from local sensors, stream to sapi, and display dalek status at [http://localhost:3000/](http://localhost:3000/)
 
 **running in streams client app mode** ([example](run_app_example.sh))
 
-Collect stream from [SAPI](http://sapi.webtrends.com/) and display dalek status at [http://localhost:3001/](http://localhost:3001/)
+* Collect stream from [SAPI](http://sapi.webtrends.com/) and display dalek status at [http://localhost:3001/](http://localhost:3001/)
 
-*You will need to provide your own accountId, oauth clientId & secret.*
+* *You will need to provide your own accountId, oauth clientId & secret.*
 
 
 Setting Stream titles
 ---------------------
 
-Each stream is marked a color associated with the flow sensor that it is represents.
+* Each stream is marked a color associated with the flow sensor that it is represents.
 
-Currently:orange, green, yellow
-
-[?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA](http://localhost:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA)
+* Currently:orange, green, yellow [?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA](http://localhost:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA)
 
 ```
 http://<servername>:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA
