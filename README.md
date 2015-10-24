@@ -26,9 +26,16 @@ npm install
 
 Usage
 -----
-```
-./run.sh
-```
+
+
+=running in embedded mode= ([example](run.sh))
+
+Collect from local sensors, stream to sapi, and display dalek status at http://localhost:3000/
+
+=running in streams client app mode= ([example](run_app_example.sh))
+
+Collect stream from sapi, and display dalek status at http://localhost:3001
+
 
 Multimode
 ---------
