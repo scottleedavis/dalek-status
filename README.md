@@ -42,8 +42,6 @@ Collect stream from [SAPI](http://sapi.webtrends.com/) and display dalek status 
 Setting Stream titles
 ---------------------
 passing http parameters to titles (orange, green, yellow) 
-```
-http://<servername&port>/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA
-```
+[http://localhost:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA](http://localhost:3000/?orange=Budweiser&green=Pabst&yellow=Ninkasi%20IPA)
 
 
