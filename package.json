@@ -17,7 +17,8 @@
     "restler": "latest",
     "ws": "latest",
     "node-cache": "latest",
-    "lodash": "latest"
+    "lodash": "latest",
+    "jsonfile": "latest"
   },
   "devDependencies": {
     "onoff": "0.3.x"

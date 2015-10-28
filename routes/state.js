@@ -13,6 +13,11 @@ router.get('/', function(req, res) {
   });
 });
 
+router.get('/reset', function(req, res) {
+  cache.reset();
+  res.json({reset: "complete"})
+});
+
 router.setCache = function(c){
   cache = c;
 }
