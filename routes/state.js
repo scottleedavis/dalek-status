@@ -20,7 +20,7 @@ router.get('/reset', function(req, res) {
   cache.store.get( "dalekState", function( err, s ){
     if( !err ){
       if( s !== undefined ){
-        flow.init(dd)
+        flow.init(s)
       }
     }
   });
