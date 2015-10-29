@@ -1,5 +1,7 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express'),
+    router = express.Router(),
+    flow = require('../lib/flow_sensor');
+
 var cache;
 
 router.get('/', function(req, res) {
@@ -15,6 +17,13 @@ router.get('/', function(req, res) {
 
 router.get('/reset', function(req, res) {
   cache.reset();
+  cache.store.get( "dalekState", function( err, s ){
+    if( !err ){
+      if( s !== undefined ){
+        flow.init(dd)
+      }
+    }
+  });
   res.json({reset: "complete"})
 });
 
