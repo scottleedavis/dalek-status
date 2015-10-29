@@ -21,7 +21,7 @@
     "jsonfile": "latest"
   },
   "devDependencies": {
-    "onoff": "0.3.x"
+    "onoff": "latest"
   },
   "license": "MIT",
   "repository": "https://github.com/scottleedavis/dalek-status"
