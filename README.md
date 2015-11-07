@@ -2,13 +2,14 @@ dalek-status
 ==========
 
 ![initial](initial.png)
-![initial](black_box.png)
+![black_box](black_box.png)
 
 Overview
 --------
 
 An embedded flow state tracking system that leverages [Webtrends Streams™](http://www.webtrends.com/products/streams/).
 
+![overview](overview.png)
 
 
 Requirements
