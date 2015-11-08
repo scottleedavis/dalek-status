@@ -27,4 +27,5 @@ build/Release
 node_modules
 
 run_app.sh
+run.sh
 lib/dalekState.json

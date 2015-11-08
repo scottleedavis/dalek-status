@@ -29,7 +29,7 @@ Client/Server Usage
 -----
 
 
-**running in embedded mode** ([example](run.sh))
+**running in embedded mode** ([example](run_example.sh))
 
 * Collect from local sensors, broadcast to [SCS](http://scs.webtrends.com/), and display dalek status at [http://localhost:3000/](http://localhost:3000/)
 
