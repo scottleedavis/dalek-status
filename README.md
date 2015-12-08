@@ -1,6 +1,8 @@
 dalek-status
 ==========
 
+This project has been consumed into the sensor portion of the [Webtrends Dalek](https://github.com/Webtrends/dalek) project.  Please visit that repo for issues and updates.
+
 ![initial](initial.png)
 ![black_box](black_box.png)
 
