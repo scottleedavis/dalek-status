@@ -4,7 +4,7 @@ dalek-status
 ![initial](initial.png)
 ![black_box](black_box.png)
 
-# *This project has been consumed into the sensor portion of the [Webtrends Dalek](https://github.com/Webtrends/dalek) project.  Please please address that repo for issues and updates.*
+# *This project has been added into the [Webtrends Dalek](https://github.com/Webtrends/dalek) project.  Please please address that repo for future issues, updates and pull requests.*
 
 Overview
 --------
