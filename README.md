@@ -4,7 +4,7 @@ dalek-status
 ![initial](initial.png)
 ![black_box](black_box.png)
 
-# *This project has been added into the [Webtrends Dalek](https://github.com/Webtrends/dalek) project.  Please please address that repo for future issues, updates and pull requests.*
+# *This project has been added into the [Webtrends Dalek](https://github.com/Webtrends/dalek) project, and any issues, updates and pull requests should be directed there.*
 
 Overview
 --------
