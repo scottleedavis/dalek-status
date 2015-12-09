@@ -1,10 +1,11 @@
 dalek-status
 ==========
 
+*This project is deprecated, and now part of the [Webtrends Dalek](https://github.com/Webtrends/dalek) project.*
+
 ![initial](initial.png)
 ![black_box](black_box.png)
 
-# *This project has been added into the [Webtrends Dalek](https://github.com/Webtrends/dalek) project, and any issues, updates and pull requests should be directed there.*
 
 Overview
 --------
